@@ -1,33 +1,24 @@
 <template>
   <div class="login">
-  	Login
-  	<facebook-login class="button"
-      appId="444687676029645"
-      @login="getUserData"
-      @logout="onLogout"
-      @get-initial-status="getUserData">
-    </facebook-login>
-
+  	<!-- <h5>Login menggunakan facebook</h5>
+  	<FacebookLogin></FacebookLogin> -->
+  	<h5>Login menggunakan FireBase</h5>
+  	<FireLogin></FireLogin>
+  	<h5>Login menggunakan Google</h5>
+  	<GoogleLogin></GoogleLogin>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import facebookLogin from 'facebook-login-vuejs';
-
+	import FacebookLogin from '@/components/FacebookLogin';
+	import FireLogin from '@/components/FireLogin';
+	import GoogleLogin from '@/components/GoogleLogin';
 export default {
   name: 'login',
   components: {
-  	facebookLogin
-  },
-  methods: {
-  	getUserData(data) {
-  		console.log(data);
-  	},
-  	onLogout(data) {
-  		console.log(data);
-  	}
+  	FacebookLogin,
+  	FireLogin,
+  	GoogleLogin
   }
 }
 </script>
