@@ -6,11 +6,14 @@
   	<FireLogin></FireLogin>
   	<h5>Login menggunakan Google</h5>
   	<GoogleLogin></GoogleLogin>
+  	<h5>Login menggunakan Facebook</h5>
+  	<FacebookFireLogin></FacebookFireLogin>
   </div>
 </template>
 
 <script>
 	import FacebookLogin from '@/components/FacebookLogin';
+	import FacebookFireLogin from '@/components/FacebookFireLogin';
 	import FireLogin from '@/components/FireLogin';
 	import GoogleLogin from '@/components/GoogleLogin';
 export default {
@@ -18,7 +21,8 @@ export default {
   components: {
   	FacebookLogin,
   	FireLogin,
-  	GoogleLogin
+  	GoogleLogin,
+  	FacebookFireLogin
   }
 }
 </script>

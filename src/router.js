@@ -4,8 +4,11 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 import About from './views/About.vue';
+import aku from './components/mastah.ntap';
 
 Vue.use(Router);
+
+console.log(aku.lagi());
 
 const router = new Router({
   routes: [
